@@ -5,10 +5,10 @@
 using namespace std;
 
 void Product::show(){
-    cout<< name << endl;
-    cout<< optPrice << endl;  //ціна у поставника
-    cout<< sale << endl;  //sale*100% = sale in percents
-    cout<< price << endl;
+    cout<< "Назва : " << name << endl;
+    cout<< "Оптова ціна : " << optPrice << endl;  //ціна у поставника
+    cout<< "Знижка : " << sale << endl;  //sale*100% = sale in percents
+    cout<< "Ціна : " << price << endl;
 }
 
 double Product::getPrice(){
@@ -17,6 +17,10 @@ double Product::getPrice(){
 
 string Product::getName(){
     return name;
+}
+
+double Product::getSale() {
+    return sale;
 }
 
 double Product::getOptPrice(){

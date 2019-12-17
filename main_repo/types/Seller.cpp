@@ -5,9 +5,9 @@
 using namespace std;
 
 void Seller::show(){
-    cout<< name << endl;
-    cout<< age << endl;
-    cout<< salary << endl;
+    cout<<"Імя : "<< name << endl;
+    cout<<"Вік : "<< age << endl;
+    cout<<"Зарплата : "<< salary << endl;
 }
 
 void Seller::changeSalary(double p){

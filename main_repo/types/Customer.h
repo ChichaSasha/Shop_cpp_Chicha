@@ -12,7 +12,18 @@ class Customer:public Human{
             earnedMoney = 0;
             ownSale = 0.0;
         }
+
+        int getEarnedMoney();
+        double getMoney();
+        double getOwnSale();
+
+        void changeMoney(double m);
+        void changeOwnSale(double m);
+        void changeEarnedMoney(int earnedMoney);
+
+
         void show() override;
+    private:
         int earnedMoney;
         double money;
         double ownSale;

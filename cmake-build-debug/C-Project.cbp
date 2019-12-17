@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sashachicha/C-Project/main_repo/types/main.cpp">
+		<Unit filename="/home/sashachicha/C-Project/main.cpp">
 			<Option target="C-Project"/>
 		</Unit>
 		<Unit filename="/home/sashachicha/C-Project/CMakeLists.txt">

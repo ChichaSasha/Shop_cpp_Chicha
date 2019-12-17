@@ -16,6 +16,7 @@ class Product{
         double getPrice();
         double getOptPrice();
         string getName();
+        double getSale();
         void changePrice(double p);
     private:
         string name;

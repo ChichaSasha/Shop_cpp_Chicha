@@ -7,26 +7,45 @@
 #pragma once
 
 class Shop{
-        Shop(string Name,vector<Seller> Sellers, vector<Product> Products, vector<Customer> Customers){
+    public:
+
+        Seller* randomSeller();
+
+        bool sellProduct(Product a, Customer* b);
+
+        void changeProfit(double newProfit);
+
+        double countSaleForCustomer(Customer b, Product c);
+
+        void setCustomer(Customer a);
+        void setSeller(Seller a);
+        void setName(string Name);
+        void setProduct(Product a);
+
+        vector<Product> getProducts();
+        vector<Seller> getSellers();
+        vector<Customer> getCustomers();
+
+        void getSeller(string name);
+        void getProduct(string name);
+
+        void show();
+
+        Shop(string Name, vector<Seller> Sellers, vector<Product> Products, vector<Customer> Customers){
             name = std::move(Name);
             sellers = std::move(Sellers);
             products = std::move(Products);
             customers = std::move(Customers);
             profit = 0;
         }
-        void getProduct(string Name);
-        void setProduct(Product a);
-        void setSeller(Seller a);
-        Seller randomSeller();
-        bool sellProduct(Product a, Customer b);
-        void getCustomer(string Name);
-        void setCustomer(Customer a);
-        void changeProfit(double newProfit);
-        void show();
+
+        vector<Customer> buyingList; //Коли покупець щось купує -> Заносимо його до списку
+
+
     private:
-        string name;
-        vector<Seller> sellers;
-        vector<Product> products;
-        vector<Customer> customers;
-        double profit;
+            string name;
+            vector<Seller> sellers;
+            vector<Product> products;
+            vector<Customer> customers;
+            double profit;
 };

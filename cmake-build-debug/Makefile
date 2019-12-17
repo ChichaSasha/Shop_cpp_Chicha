@@ -123,32 +123,32 @@ C-Project/fast:
 	$(MAKE) -f CMakeFiles/C-Project.dir/build.make CMakeFiles/C-Project.dir/build
 .PHONY : C-Project/fast
 
-main_repo/types/main.o: main_repo/types/main.cpp.o
+main.o: main.cpp.o
 
-.PHONY : main_repo/types/main.o
+.PHONY : main.o
 
 # target to build an object file
-main_repo/types/main.cpp.o:
-	$(MAKE) -f CMakeFiles/C-Project.dir/build.make CMakeFiles/C-Project.dir/main_repo/types/main.cpp.o
-.PHONY : main_repo/types/main.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/C-Project.dir/build.make CMakeFiles/C-Project.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-main_repo/types/main.i: main_repo/types/main.cpp.i
+main.i: main.cpp.i
 
-.PHONY : main_repo/types/main.i
+.PHONY : main.i
 
 # target to preprocess a source file
-main_repo/types/main.cpp.i:
-	$(MAKE) -f CMakeFiles/C-Project.dir/build.make CMakeFiles/C-Project.dir/main_repo/types/main.cpp.i
-.PHONY : main_repo/types/main.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/C-Project.dir/build.make CMakeFiles/C-Project.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main_repo/types/main.s: main_repo/types/main.cpp.s
+main.s: main.cpp.s
 
-.PHONY : main_repo/types/main.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-main_repo/types/main.cpp.s:
-	$(MAKE) -f CMakeFiles/C-Project.dir/build.make CMakeFiles/C-Project.dir/main_repo/types/main.cpp.s
-.PHONY : main_repo/types/main.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/C-Project.dir/build.make CMakeFiles/C-Project.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... C-Project"
 	@echo "... edit_cache"
-	@echo "... main_repo/types/main.o"
-	@echo "... main_repo/types/main.i"
-	@echo "... main_repo/types/main.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

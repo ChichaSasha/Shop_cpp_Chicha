@@ -3,4 +3,4 @@ project(C-Project)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(C-Project main_repo/types/main.cpp)
+add_executable(C-Project main.cpp)
