@@ -10,3 +10,9 @@ Seller::Seller(string _seller_name, int _seller_age, double _salary):Human(_sell
 }
 double Seller::getSalary() { return salary; }
 void Seller::setSalary(double _new_salary) { salary = _new_salary; }
+
+void Seller::show() {
+    cout<< "Імя продавця : " << getName() << endl;
+    cout<< "Вік : " << getAge() << endl;
+    cout<< "Заробітна плата : " << salary << endl;
+}

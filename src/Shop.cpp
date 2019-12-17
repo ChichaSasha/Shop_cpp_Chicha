@@ -93,4 +93,20 @@ bool Shop::sellProduct(Product *_product, Customer *_customer) {
 	return false;
 }
 
+void Shop::show() {
+    cout << "Назва магазину : " << name << endl;
+    cout << "Продавці магазину : "<< endl;
+    for(int i = 0;i<sellers.size();i++){
+        sellers[i]->show();
+    }
+    cout << "Продукти в наявності : "<< endl;
+    for(int i = 0;i<products.size();i++){
+        products[i]->show();
+    }
+    cout << "Покупці магазину : "<< endl;
+    for(int i = 0;i<customers.size();i++){
+        customers[i]->show();
+    }
+}
+
 

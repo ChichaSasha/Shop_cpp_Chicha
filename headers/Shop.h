@@ -34,6 +34,9 @@ public:
 	vector<Customer*> customers;
 
 	vector<Customer> buyingList;
+
+	void show();
+
 private:
 	string name;
 	double profit;

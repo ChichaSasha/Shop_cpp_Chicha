@@ -22,7 +22,8 @@ public:
 	void setAge(int _age);
 	string getName();
 	int getAge();
-	void show();
+
+    virtual void show();
 };
 
 

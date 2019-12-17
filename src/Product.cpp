@@ -34,3 +34,10 @@ void Product::setSale(double _sale) {
 void Product::setOptPrice(double _optPrice) {
 	optPrice = _optPrice;
 }
+
+void Product::show() {
+    cout<< "Назва продукту : " << name << endl;
+    cout<< "Ціна : " << price << endl;
+    cout<< "Оптова ціна : " << optPrice << endl;
+    cout<< "Знижка : " << sale << endl;
+}

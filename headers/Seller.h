@@ -15,6 +15,7 @@ class Seller : public Human{
 		Seller(string _seller_name, int _seller_age, double _salary);
 		double getSalary();
 		void setSalary(double _new_salary);
+		void show();
 };
 
 

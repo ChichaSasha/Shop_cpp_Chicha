@@ -22,6 +22,8 @@ class Customer : public Human{
 		double getMoney();
 		double getSpentMoney();
 		double getSelfSale();
+
+		void show();
 };
 
 

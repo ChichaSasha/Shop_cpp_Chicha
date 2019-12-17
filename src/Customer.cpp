@@ -20,3 +20,11 @@ void Customer::setSelfSale(double _selfSale) { selfSale = _selfSale;}
 double Customer::getMoney() { return money; }
 double Customer::getSpentMoney() { return spentMoney; }
 double Customer::getSelfSale() { return selfSale; }
+
+void Customer::show() {
+    cout<< "Імя покупця : " << getName() << endl;
+    cout<< "Вік : " << getAge() << endl;
+    cout<< "Гроші : " << money << endl;
+    cout<< "Витрачені гроші : " << spentMoney << endl;
+    cout<< "Персональна знижка : " << selfSale << endl;
+}

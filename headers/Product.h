@@ -27,6 +27,8 @@ public:
 	void setSale(double _sale);
 	void setOptPrice(double _optPrice);
 
+	void show();
+
 private:
 	string name;
 	double sale;
