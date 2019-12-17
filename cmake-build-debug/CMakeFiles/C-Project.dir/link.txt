@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/C-Project.dir/main_repo/types/main.cpp.o  -o C-Project 
