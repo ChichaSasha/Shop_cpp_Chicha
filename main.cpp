@@ -26,6 +26,44 @@
 int main() {
     srand(time(0));
     setlocale(LC_ALL, "Russian");
+    //-----------------------------Тесты--------------------------------------------------------------------------------
+
+    testGetNameHuman();
+    testGetAgeHuman();
+    testSetNameHuman();
+    testSetAgeHuman();
+
+    testSetMoneyCustomer();
+    testSetSpentMoneyCustomer();
+    testSetSelfSaleCustomer();
+    testGetMoneyCustomer();
+    testGetSpentMoneyCustomer();
+    testGetSelfSaleCustomer();
+
+    testSetSalarySeller();
+    testGetSalarySeller();
+
+    testGetNameProduct();
+    testGetPriceProduct();
+    testGetOptPriceProduct();
+    testGetSaleProduct();
+    testSetNameProduct();
+    testSetPriceProduct();
+    testSetOptPriceProduct();
+    testSetSaleProduct();
+
+    testSetNameShop();
+    testSetProfitShop();
+    testAddSellerShop();
+    testAddCustomerShop();
+    testAddProductShop();
+    testRandomSellerShop();
+    testGetSellersShop();
+    testGetProductsShop();
+    testGetCustomersShop();
+    testSellProductShop();
+    //------------------------------------------------------------------------------------------------------------------
+    //------------------------Моделирование работы----------------------------------------------------------------------
     int n;
     cout << "Ввод с консоли или файла?" << endl << "1 - консоль, 2 - файл" << endl;    //вибираємо спосіб вводу
     cin >> n;
