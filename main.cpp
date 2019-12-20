@@ -16,6 +16,7 @@
 #include "src/Customer.cpp"
 #include "src/Product.cpp"
 #include "src/parcingFunc.cpp"
+#include "Tests/allTests.cpp"
 #include <cstdlib>
 #include <ctime>
 #include <fstream>
