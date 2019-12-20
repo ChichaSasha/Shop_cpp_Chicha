@@ -1,6 +1,4 @@
-//
-// Created by TheGodfather on 17.12.2019.
-//
+
 
 #ifndef CPP_PROJECT_SHOP_CUSTOMER_H
 #define CPP_PROJECT_SHOP_CUSTOMER_H

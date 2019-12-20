@@ -24,15 +24,15 @@ void Shop::addProduct(Product *_product) {products.push_back(_product);}
 void Shop::addSeller(Seller *_seller) {sellers.push_back(_seller);}
 
 vector<Seller *> Shop::getSellers() {
-	return vector<Seller *>();
+	return sellers;
 }
 
 vector<Customer *> Shop::getCustomers() {
-	return vector<Customer *>();
+	return customers;
 }
 
-vector<Product *> Shop::getProducts() {
-	return vector<Product *>();
+vector<Product*> Shop::getProducts() {
+	return products;
 }
 
 Seller *Shop::randomSeller() {
@@ -83,6 +83,7 @@ bool Shop::sellProduct(Product *_product, Customer *_customer) {
 			profit += (priceWithSale - _product->getOptPrice()); //Збільшимо профіт магазини на різницю між оптовою та установленою ціною
 			products = deleteByIndex(products ,index); //Видаляємо з списку продуктів продукт, який продали
 			_customer->setMoney(_customer->getMoney() - priceWithSale); //Знімаємо з рахунку покупця достатню для купівлі суму
+			_customer->setSpentMoney(_customer->getSpentMoney() + priceWithSale);
 			buyingList.push_back(*_customer);
 			return true;
 		}else{

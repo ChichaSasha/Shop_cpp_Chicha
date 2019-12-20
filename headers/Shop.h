@@ -30,7 +30,7 @@ public:
 	bool sellProduct(Product *_product, Customer *_customer);
 
 	vector<Seller*> sellers;
-	vector<Product *> products;
+	vector<Product*> products;
 	vector<Customer*> customers;
 
 	vector<Customer> buyingList;

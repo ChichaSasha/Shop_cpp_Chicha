@@ -3,11 +3,11 @@
 #include "src/Customer.cpp"
 #include "src/Product.cpp"
 #include "src/parcingFunc.cpp"
+#include <cstdlib>
 #include <ctime>
 #include <fstream>
-#include <cstdlib>
+#include <vector>
 
-using namespace std;
 
 int main() {
     srand(time(0));
@@ -139,16 +139,13 @@ int main() {
     cout << endl;
 
     for (int i = 0;i<time_count;i++){
-        cout << i << endl;
+        cout <<"День :" << (i + 1) << endl;
         vector<Product*> allProducts = s->getProducts();
-        for(int i = 0;i<allProducts.size();i++){
-            allProducts[i]->show();
-        }
         Product* randomProduct = allProducts[(rand()%allProducts.size())];
         vector<Customer*> allCostumers = s->getCustomers();
         Customer* randomCustomer = allCostumers[(rand()%(allCostumers.size()))];
         cout<<"Покупець "<<randomCustomer->getName()<<endl;
-        cout<<"Продукт  "<<randomCustomer->getName()<<endl;
+        cout<<"Продукт  "<<randomProduct->getName()<<endl;
         auto r = s->sellProduct(randomProduct, randomCustomer);
         if (r){
             cout<<"Покупець "<<randomCustomer->getName()<<" купив товар "<<randomProduct->getName()<<endl;
